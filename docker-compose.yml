@@ -1,9 +1,9 @@
 version: '3'
 services:
-  skytabledb:
-    image: skytable/sdb:v0.7.5
-    container_name: mysky
-    volumes:
-      - ./skytable:/var/lib/skytable
+  foundationDB:
+    image: foundationdb/foundationdb:7.3.5
+    container_name: foundationDB
+    #volumes:
+     # - ./foundationdb:/var/lib/skytable
     ports:
-      - 29991:2003
+      - 4500:4500
