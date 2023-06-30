@@ -15,6 +15,11 @@ Python을 기반으로 여러 DB의 조회(중복 체크)성능을 측정 및 �
 
 ## 🌱 사용한 Database
 
+- foundationDB
+- python-diskcache 
+- faster 
+- databute 
+
 --- 
 
 

@@ -10,6 +10,6 @@ url_list = ["https://www.google.com", "https://www.bing.com",
 creator = UrlCreator(MEMORY_1MB * 50, url_list)
 
 
-len, result = creator.createUrl(1000)
+len, result = creator.createUrl(50)
 
 print("end")
