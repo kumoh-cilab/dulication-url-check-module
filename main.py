@@ -1,16 +1,15 @@
-# This is a sample Python script.
+from urlcreator import UrlCreator
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+MEMORY_1GB = 1073741824
+MEMORY_1MB =  1000000
+url_list = ["https://www.google.com", "https://www.bing.com",
+ "https://www.facebook.com", "https://www.instagram.com",
+ "https://www.twitter.com", "https://www.youtube.com", "https://www.netflix.com",
+            "https://www.bbc.com/news", "https://www.cnn.com", "https://www.nytimes.com"]
+
+creator = UrlCreator(MEMORY_1MB * 50, url_list)
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+len, result = creator.createUrl(1000)
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print("end")
